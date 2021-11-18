@@ -9,7 +9,8 @@ public class RegexDemo3 {
 		System.out.println(test("google.net"));
 		System.out.println(test("reference1.ua"));
 		System.out.println(test("reference1.org"));
-		System.out.println(test("Hello world!"));
+		System.out.println(test("reference1.io"));
+		System.out.println(test("Hello world"));
 
 	}
 

@@ -8,6 +8,14 @@ public class WrapperDemo1 {
 		Boolean boolean1 = new Boolean(true);
 		Boolean boolean2 = new Boolean("Some String");
 
+		Boolean boolean3 = Boolean.valueOf(false);
+		Boolean boolean4 = Boolean.valueOf("true");
+
+		Boolean boolean5 = false;
+		Boolean boolean6 = true;
+
+		boolean b = boolean5;
+		
 		Integer i1 = new Integer(42);
 		Integer i2 = new Integer("42");
 

@@ -31,18 +31,21 @@ public class MatcherTask3 {
 
 		while (matcher.find()) {
 			findCounter++;
-
-			sb.append(text.substring(startIndex, matcher.start()));
+			int start = matcher.start();
+			int end = matcher.end();
+				
+			sb.append(text.substring(startIndex, start));
 			if (findCounter % 2 == 0) {
 				sb.append("OOP");
 			} else {
-				sb.append(text.substring(matcher.start(), matcher.end()));
+				sb.append(text.substring(start, end));
 			}
-			startIndex = matcher.end();
+			startIndex = end;
 		}
 		sb.append(text.substring(startIndex));
 
 		System.out.println(sb);
+
 	}
 
 }

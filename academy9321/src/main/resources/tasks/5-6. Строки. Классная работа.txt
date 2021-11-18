@@ -59,7 +59,8 @@ e) Найти позицию подстроки “Java” в строке “I 
 
 Задание 8. (lesson 6)
   
-Изменить регулярное выражение в примере для нахождения строк cab, ccab, cccab.
+Изменить регулярное выражение в примере для нахождения строк
+ cab, ccab, cccab.
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

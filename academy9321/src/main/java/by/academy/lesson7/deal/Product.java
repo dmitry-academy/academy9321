@@ -1,0 +1,59 @@
+package by.academy.lesson7.deal;
+
+public abstract class Product {
+	protected String type;
+	protected String name;
+	protected double price;
+	protected double quantity;
+
+	public Product(String type, String name, double price, double quantity) {
+		super();
+		this.type = type;
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+	}
+
+	protected double getProductPrice() {
+		return price * quantity * getDiscount();
+	}
+
+	protected abstract double getDiscount();
+
+	public double getFullPrice() {
+		return quantity * price;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public double getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(double quantity) {
+		this.quantity = quantity;
+	}
+
+}

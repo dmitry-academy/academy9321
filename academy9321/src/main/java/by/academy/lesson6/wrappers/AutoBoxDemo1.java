@@ -10,14 +10,15 @@ public class AutoBoxDemo1 {
 //		System.out.println(i + " " + iOb);
 		int in = 100;
 		Integer iOb = 100; // упаковать значение int
-		test(iOb);
 		test(in);
+		test(iOb);
 //		test("test");
-
+		int i = Integer.MAX_VALUE;
+		test(i);
 	}
 
-	private static void test(Integer sdfasdf) {
-		System.out.println("Integer");
+	private static void test(int i) {
+		System.out.println("int: " + i);
 	}
 
 	private static void test(String i) {
