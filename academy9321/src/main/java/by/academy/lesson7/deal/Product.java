@@ -1,10 +1,17 @@
 package by.academy.lesson7.deal;
 
-public abstract class Product {
+import java.io.Serializable;
+
+public abstract class Product implements Serializable {
+	private static final long serialVersionUID = 1L;
 	protected String type;
 	protected String name;
 	protected double price;
 	protected double quantity;
+
+	public Product() {
+		super();
+	}
 
 	public Product(String type, String name, double price, double quantity) {
 		super();
