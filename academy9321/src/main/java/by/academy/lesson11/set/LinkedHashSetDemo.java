@@ -6,7 +6,7 @@ import java.util.Set;
 public class LinkedHashSetDemo {
 	public static void main(String[] args) {
 		Set<String> linkedHashSet = new LinkedHashSet<>();
-
+		
 		linkedHashSet.add("Бета");
 		linkedHashSet.add("Aльфa");
 		linkedHashSet.add("Этa");

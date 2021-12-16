@@ -17,6 +17,8 @@ public class ArrayListRetainAllDemo {
         arrayList1.add("F");
 
         arrayList1.retainAll(arrayList2);
+        
+
         System.out.println(arrayList1);
     }
 }

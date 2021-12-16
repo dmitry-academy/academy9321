@@ -14,5 +14,6 @@ public class TreeSetDemo1 {
         treeSet.add("Минск");
 
         System.out.println(treeSet);
+   
     }
 }

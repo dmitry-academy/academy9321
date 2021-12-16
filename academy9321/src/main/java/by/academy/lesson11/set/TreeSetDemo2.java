@@ -1,7 +1,6 @@
 package by.academy.lesson11.set;
 
 import java.util.Comparator;
-import java.util.Random;
 import java.util.SortedSet;
 import java.util.TreeSet;
 //[Гродно, Брест, Могилев, Гомель, Минск, Минск]
@@ -10,15 +9,17 @@ import java.util.TreeSet;
 
 public class TreeSetDemo2 {
 	public static void main(String[] args) {
-		SortedSet<String> treeSet = new TreeSet<>(new Comparator<String>() {
+
+		Comparator<String> c = new Comparator<String>() {
 			int i = 0;
 
 			@Override
 			public int compare(String o1, String o2) {
-				System.out.println("compare" + i);
-				return i--;
+//				System.out.println("compare" + i);
+				return --i;
 			}
-		});
+		};
+		SortedSet<String> treeSet = new TreeSet<>(c);
 
 		treeSet.add("Минск");
 		treeSet.add("Брест");

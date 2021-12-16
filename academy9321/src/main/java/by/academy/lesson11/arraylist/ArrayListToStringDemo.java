@@ -18,5 +18,6 @@ public class ArrayListToStringDemo {
 		// 3 вариант
 		String[] stringArray2 = arrayList.toArray(new String[0]);
 		System.out.println(Arrays.toString(stringArray2));
+
 	}
 }

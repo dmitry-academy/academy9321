@@ -12,8 +12,8 @@ public class HashMapDemo {
 		WrongHashCat cat2 = new WrongHashCat("барсик");
 		WrongHashCat cat3 = new WrongHashCat("платон");
 		WrongHashCat cat4 = new WrongHashCat("кузя");
-		WrongHashCat cat5 = new WrongHashCat("вася");
-		WrongHashCat cat6 = new WrongHashCat("вася");
+//		WrongHashCat cat5 = new WrongHashCat("вася");
+//		WrongHashCat cat6 = new WrongHashCat("вася");
 
 		Map<WrongHashCat, Integer> hashMap = new HashMap<>();
 
@@ -21,7 +21,6 @@ public class HashMapDemo {
 		hashMap.put(cat2, 2);
 		hashMap.put(cat3, 3);
 		hashMap.put(cat4, 4);
-
 //		hashMap.put("Иванов2", 1.0);
 //		hashMap.put("Петров", 123.22);
 //		hashMap.put("Сидоров", 1378.00);
