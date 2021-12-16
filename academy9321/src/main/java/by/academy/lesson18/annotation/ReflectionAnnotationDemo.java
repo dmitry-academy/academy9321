@@ -23,18 +23,14 @@ public class ReflectionAnnotationDemo {
 
 			System.out.println(descriptionAnnotation);
 
-			Annotation[] annotationsByType = horsepowerField.getAnnotationsByType(Description.class);
-			System.out.println(Arrays.toString(annotationsByType));
-			System.out.println(descriptionAnnotation.value());
+//			Annotation[] annotationsByType = horsepowerField.getAnnotationsByType(Description.class);
+//			System.out.println(Arrays.toString(annotationsByType));
+//			System.out.println(descriptionAnnotation.value());
 
 		} catch (NoSuchFieldException e) {
 			e.printStackTrace();
 		} catch (SecurityException e) {
 			e.printStackTrace();
-		}
-
-		alala: {
-
 		}
 	}
 }
